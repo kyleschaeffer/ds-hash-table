@@ -1,8 +1,8 @@
 /**
  * Hash table data structure
- *  - Extremely performant lookup time: O(1)
+ *  - Extremely performant storage and lookup time: O(1)
  *  - Table key = hashed value
- *  - Need good hashing algorithm with no/low collision chance
+ *  - This implementation does not handle collision
  */
 export class HashTable {
   /**
@@ -40,6 +40,7 @@ export class HashTable {
 
   /**
    * Hash the given input string
+   *  - Simple hashing algorithm for the sake of brevity
    */
   public hash(value: string): number {
     let num: number = 0;
