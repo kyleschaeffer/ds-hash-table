@@ -35,7 +35,7 @@ export class HashTable {
    * Check table to see if something is already in memory
    */
   public check(value: string): boolean {
-    return !!this.table[this.hash(value)];
+    return this.table[this.hash(value)] !== undefined;
   }
 
   /**
